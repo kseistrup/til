@@ -18,6 +18,10 @@ os.terminal_size(columns=191, lines=60)
 >>>
 ```
 
+`shutil.get_terminal_size()` and `os.get_terminal_size()` both require
+Python 3.3+.
+
+
 `shutil.get_terminal_size()` examines the environment varables `LINES` and
 `COLUMNS`, and secondarily uses `os.get_terminal_size()` to find the size
 of `stdout`.
