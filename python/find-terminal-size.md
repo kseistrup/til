@@ -27,7 +27,7 @@ Python 3.3+.
 of `stdout`.
 
 If you wish to take into account `stdin`, `stdout`, `stderr`, as well as
-`/dev/tty`, use something like
+`/dev/tty`, use something like [this](find_terminal_size.py):
 
 ```py
 #!/usr/bin/python
