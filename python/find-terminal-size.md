@@ -4,7 +4,19 @@ The
 [documentation](https://docs.python.org/3/library/os.html#querying-the-size-of-a-terminal)
 suggests that
 [`shutil.get_terminal_size()`](https://docs.python.org/3/library/shutil.html#shutil.get_terminal_size)
-be used.
+be used:
+
+```py
+>>> import shutil
+>>> tsize = shutil.get_terminal_size()
+>>> tsize
+os.terminal_size(columns=191, lines=60)
+>>> tsize.columns
+191
+>>> tsize.lines
+60
+>>>
+```
 
 `shutil.get_terminal_size()` examines the environment varables `LINES` and
 `COLUMNS`, and secondarily uses `os.get_terminal_size()` to find the size
