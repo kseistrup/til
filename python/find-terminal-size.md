@@ -1,4 +1,4 @@
-# Find the size of the terminal
+## Find the size of the terminal
 
 The
 [documentation](https://docs.python.org/3/library/os.html#querying-the-size-of-a-terminal)
